@@ -1,16 +1,13 @@
-num = (input()) #third private test case not passed
+num = (input()) #passed and submitted
 num = num.split(" ")
 num = sorted(num)
 
-
-missnum = 0
-count = 1
+n=len(num)
+sum_of_A =0
+total = (n + 1)*(n + 2)/2
 
 for n in num:
-  n= int(n)
-  if(n != count):
-    missnum = count
-    break
-  count += 1
+  sum_of_A +=int(n)
 
-print(missnum,end="")
+print(int(total - sum_of_A),end="")
+
