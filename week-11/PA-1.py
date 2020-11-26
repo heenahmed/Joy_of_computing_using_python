@@ -1,4 +1,4 @@
-import math #third private case not passed
+import math #passed and submitted
 dnum = input()
 dnum = dnum.split(",")
 res=[]
@@ -7,10 +7,8 @@ res=[]
 for d in dnum:
   d = int(d)
   q = round(math.sqrt((2*50*d)/30))
+  q=str(q)
   res.append(q)
   
-for x in res:
-  if(x==res[-1]):
-    print(x,end="")
-  else:
-    print(x,end=",")
+print(",".join(res),end="")
+    
